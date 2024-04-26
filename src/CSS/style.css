@@ -1,0 +1,57 @@
+.main{
+    background-color: whitesmoke;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    margin: 5px;
+    box-sizing: border-box;
+}
+.myClass{
+    padding: 20px;
+    background-color: lightblue;
+}
+
+img{
+    position: relative;
+    width:100%;
+}
+select{
+    color : red;
+    font-size: 1.2rem; 
+    font-weight: bolder;
+    
+}
+button.accordion-button.collapsed{
+    background-color:  lightblue;
+}
+.quantity-changer{
+    width: 50%;
+}
+.divider{
+    border-bottom: 1px solid rgb(228, 228, 228);
+}
+
+.cart-items-container{
+    width: 95%;
+    height: 420px;
+    box-sizing: border-box;
+    padding: 30px;
+    overflow: scroll;
+    overflow-x: hidden;
+    background-color: lightblue;
+   
+}
+.result{
+    width: 91%;
+    padding: 30px;
+}
+.appcon{
+    background-color: whitesmoke;
+}
+.acco{
+    background-color: lightcyan;
+}

@@ -1,0 +1,84 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "quantity":1,
+            "title": "Information Technology",
+            "description": "To learn from stong knowledge build core concepts of Information technology",
+            "price": 549,
+            "discountPercentage": 12.96,
+            "rating": 4.69,
+            "stock": 94,
+            "brand": "IT",
+            "category": "Books",
+            "thumbnail": "https://i.dummyjson.com/data/products/1/thumbnail.jpg",
+            "images": [
+                "./infotech.jpg"
+            ]
+        },
+        {
+            "id": 2,
+            "quantity":1,
+            "title": "Core Python Programming",
+            "description": "This book covers all concepts in simple and easy to understand English. It helps to build logic, which becomes a stepping stone for programming.",
+            "price": 899,
+            "discountPercentage": 17.94,
+            "rating": 4.44,
+            "stock": 34,
+            "brand": "Py-Charm",
+            "category": "Books",
+            "thumbnail": "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
+            "images": [
+                "./python.webp"
+            ]
+        },
+        {
+            "id": 3,
+            "quantity":2,
+            "title": "HTML CSS JAVASCRIPT",
+            "description": "JavaScript is the programming language of the web and is used by more software developers today than any other programming language. ",
+            "price": 1249,
+            "discountPercentage": 15.46,
+            "rating": 4.09,
+            "stock": 36,
+            "brand": "Web Dev",
+            "category": "Books",
+            "thumbnail": "https://i.dummyjson.com/data/products/3/thumbnail.jpg",
+            "images": [
+                "./javascript.jpg"
+            ]
+        },
+        {
+            "id": 4,
+            "quantity":1,
+            "title": "JAVA & OOP",
+            "description": " Fundamentals, Twelfth Edition, is the definitive guide to writing robust, maintainable code. ",
+            "price": 280,
+            "discountPercentage": 17.91,
+            "rating": 4.3,
+            "stock": 123,
+            "brand": "Fundamentals",
+            "category": "Books",
+            "thumbnail": "https://i.dummyjson.com/data/products/4/thumbnail.jpg",
+            "images": [
+                "./java.webp"
+            ]
+        },
+        {
+            "id": 5,
+            "quantity":0,
+            "title": "Databases",
+            "description": "Pearson introduces the seventh edition of its best seller on database systems by Elmasri and Navathe. This edition is thoroughly revised to provide an in-depth and up-to-date presentation of the most important aspects of database systems and applications and related technologies. It systematically builds on the core fundamental concepts necessary for designing, using and implementing database",
+            "price": 499,
+            "discountPercentage": 10.58,
+            "rating": 4.09,
+            "stock": 32,
+            "brand": "Seventh Edition",
+            "category": "Books",
+            "thumbnail": "https://i.dummyjson.com/data/products/5/thumbnail.jpg",
+            "images": [
+                "./database.jpg"
+            ]
+        }
+    ]
+}
