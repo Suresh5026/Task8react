@@ -37,7 +37,7 @@ button.accordion-button.collapsed{
 
 .cart-items-container{
     width: 95%;
-    height: 420px;
+    height: 380px;
     box-sizing: border-box;
     padding: 30px;
     overflow: scroll;
