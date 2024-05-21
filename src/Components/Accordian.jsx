@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types'
 
 import {
   Accordion,
@@ -24,8 +25,8 @@ function Accordian({options=[]}) {
         {
             options.map((option,index)=>(
             <AccordionItem  key={`${option.title}-${index}`}>
-                <AccordionHeader targetId={index}>{option.title}</AccordionHeader>
-                <AccordionBody className='acco' accordionId={index}>
+                <AccordionHeader targetId={String(index)}>{option.title}</AccordionHeader>
+                <AccordionBody className='acco' accordionId={String(index)}>
                     {option.desc}
                 </AccordionBody>
             </AccordionItem>
@@ -38,4 +39,8 @@ function Accordian({options=[]}) {
 
 export default Accordian;
 
+Accordian.propTypes = {
+  targetId : PropTypes.string,
+  Accordian : PropTypes.func
+}
 

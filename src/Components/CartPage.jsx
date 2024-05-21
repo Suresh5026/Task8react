@@ -1,7 +1,7 @@
 import { Button } from "reactstrap";
 import Accordian from "./Accordian";
 import PropTypes from 'prop-types'
-import { removeFromCart } from "../Redux/Reducers/Cart";
+
 
 
 
