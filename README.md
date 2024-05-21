@@ -13,3 +13,5 @@
 ---"App.jsx" to implementing the setups for the task ---
 
 ---Remove Button is used to removing the products from the cart---
+
+---Cart Page Link (click here)[https://reacttask8.netlify.app/]
