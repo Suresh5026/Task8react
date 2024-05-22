@@ -12,7 +12,7 @@ function App() {
     total = 0, } = useSelector((store)=>store.Cart)
     const [shipping] = useState(0);
   useEffect(()=>{
-    fetch('http://localhost:5173/products.json')
+    fetch('https://reactcartpage8task.netlify.app/products.json')
     .then((res)=>res.json())
     .then(result=>dispatcher(saveAllProducts(result.products)))
     .catch(err=>console.log(err))
