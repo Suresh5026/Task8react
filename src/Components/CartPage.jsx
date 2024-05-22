@@ -60,7 +60,7 @@ export default function CartPage({
                     <div className="col-12">
                         <div className="row"></div>
                         <div className="row">
-                            <Button className="d-flex justify-content-center" type="submit" color="link" onClick={()=>dispatcher(removeFromCart(data))}>REMOVE</Button>
+                            <Button className="d-flex justify-content-center" defaultValue={data.id} type="submit" color="link" onClick={(e)=>dispatcher(removeFromCart({id : data.id,value:e.target.value}))}>REMOVE</Button>
                         </div>
                     </div>
                 </div>
