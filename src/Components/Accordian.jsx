@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import PropTypes from 'prop-types'
-
+import PropTypes from 'prop-types';
 import {
   Accordion,
   AccordionBody,
@@ -8,39 +7,45 @@ import {
   AccordionItem,
 } from 'reactstrap';
 
+function Accordian({ options = [] }) {
+  const [open, setOpen] = useState('1'); // Initial open state should be a string or a valid ID
 
-function Accordian({options=[]}) {
-  const [open, setOpen] = useState('1');
   const toggle = (id) => {
     if (open === id) {
-      setOpen();
+      setOpen(''); // Clear the open state if the same id is clicked
     } else {
-      setOpen(id);
+      setOpen(id); // Set the open state to the new id
     }
   };
 
   return (
     <div>
       <Accordion open={open} toggle={toggle}>
-        {
-            options.map((option,index)=>(
-            <AccordionItem  key={`${option.title}-${index}`}>
-                <AccordionHeader targetId={String(index)}>{option.title}</AccordionHeader>
-                <AccordionBody className='acco' accordionId={String(index)}>
-                    {option.desc}
-                </AccordionBody>
+        {options.map((option, index) => {
+          const id = `${index}-${option.title}`;
+          return (
+            <AccordionItem key={id}>
+              <AccordionHeader targetId={id} onClick={() => toggle(id)}>
+                {option.title}
+              </AccordionHeader>
+              <AccordionBody accordionId={id}>
+                {option.desc}
+              </AccordionBody>
             </AccordionItem>
-            ))
-        }
+          );
+        })}
       </Accordion>
     </div>
   );
 }
 
-export default Accordian;
-
 Accordian.propTypes = {
-  targetId : PropTypes.string,
-  Accordian : PropTypes.func
-}
+  options: PropTypes.arrayOf(
+    PropTypes.shape({
+      title: PropTypes.string.isRequired,
+      desc: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+};
 
+export default Accordian;

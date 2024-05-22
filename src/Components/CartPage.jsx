@@ -12,7 +12,6 @@ export default function CartPage({
     quantityChange=()=>{},
     dispatcher=()=>{},
     removeFromCart = ()=>{}
-    
 }){
     
     
