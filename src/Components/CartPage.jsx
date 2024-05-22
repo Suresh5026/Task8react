@@ -74,18 +74,10 @@ export default function CartPage({
 }
 
 CartPage.propTypes = {
-    data: PropTypes.shape({
-      id: PropTypes.string.isRequired,
-      images: PropTypes.string.isRequired,
-      title: PropTypes.string.isRequired,
-      description: PropTypes.string.isRequired,
-      brand: PropTypes.string.isRequired,
-      rating: PropTypes.number.isRequired,
-      quantity: PropTypes.number.isRequired,
-      price: PropTypes.number.isRequired
-    }).isRequired,
-    dispatcher: PropTypes.func.isRequired,
-    quantityChange: PropTypes.func.isRequired,
-    removeFromCart: PropTypes.func.isRequired,
+    data: PropTypes.object,
+    dispatcher: PropTypes.func,
+    quantityChange : PropTypes.func,
+    
   };
+  
 
